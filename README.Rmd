@@ -19,6 +19,7 @@ knitr::opts_chunk$set(
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Travis build status](https://travis-ci.com/Ramdhadage/RShiny.svg?branch=master)](https://travis-ci.com/Ramdhadage/RShiny)
 [![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/Ramdhadage/RShiny?branch=master&svg=true)](https://ci.appveyor.com/project/Ramdhadage/RShiny)
+[![Codecov test coverage](https://codecov.io/gh/Ramdhadage/ShinyExample003/branch/master/graph/badge.svg)](https://codecov.io/gh/Ramdhadage/ShinyExample003?branch=master)
 <!-- badges: end -->
 
 The goal of Rshiny is to ...

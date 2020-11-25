@@ -49,6 +49,8 @@ usethis::use_vignette("Rshiny")
 devtools::build_vignettes()
 
 ## Code coverage ----
+# infrastructure in your application
+usethis::use_coverage()
 ## (You'll need GitHub there)
 usethis::use_github()
 usethis::use_travis()

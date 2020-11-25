@@ -8,19 +8,22 @@
 #' @noRd
 app_server <- function( input, output, session ) {
   # List the first level callModules here
-  # toReturn <- reactiveValues(
-  #   ship_typeid = NULL,
-  #   ship_nameid = NULL
-  # )
   
-   a <- callModule(mod_Dropdown_server,"DropdownUpdation")
-  long.dist <- reactive({
-    req(a$ship_typeid)
-    # print(a$ship_nameid)
-    # browser()
-    HelperforMap_fun(a$ship_nameid)
+  # Calling the mod_dropdown model and return it to Dropdown list
+  
+   Dropdown <- callModule(mod_Dropdown_server, "DropdownUpdation")
+  
+   # stored longest distance and corsponding consecutive LON and Lat in reactive list.
+  
+    long.dist <- reactive({
+    
+     req(Dropdown$ship_typeid)
+    
+    HelperforMap_fun(Dropdown$ship_nameid)
       
   })
-  # browser()
-  callModule(mod_Plot_server,id = "map",long.dist,a)
+  
+  #This module plot the consecutive LON and lat on maps using leaflet and add note of sailed distance    
+  
+    callModule(mod_Plot_server, id = "map", long.dist, Dropdown)
 }
