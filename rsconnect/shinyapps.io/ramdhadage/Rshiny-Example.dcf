@@ -1,0 +1,12 @@
+name: Rshiny-Example
+title: Rshiny-Example
+username:
+account: ramdhadage
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3299641
+bundleId: 3903906
+url: https://ramdhadage.shinyapps.io/Rshiny-Example/
+when: 1606299906.06421
+asMultiple: FALSE
+asStatic: FALSE
